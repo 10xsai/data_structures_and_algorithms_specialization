@@ -4,9 +4,9 @@ import sys
 
 def max_dot_product(a, b):
     #write your code here
-    res = 0
-    for i in range(len(a)):
-        res += a[i] * b[i]
+    a = sorted(a, reverse=True)
+    b = sorted(b, reverse=True)
+    res = sum([a1*b1 for a1, b1 in zip(a, b)])
     return res
 
 if __name__ == '__main__':

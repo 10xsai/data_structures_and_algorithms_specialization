@@ -23,15 +23,16 @@ public class FractionalKnapsack {
                     index = i;
                 }
             }
-            bool[index] = false;
             int weight = weights[index];
-            if (capacity >= weight) {
+            if (capacity >= weight && bool[index]) {
                 capacity -= weight;
                 value += values[index];
-            } else {
+            } else if (bool[index]){
                 value += (float) (values[index] * capacity) / (float) weight;
                 capacity = 0;
             }
+            bool[index] = false;
+            System.out.println(capacity);
         }
 
         return value;
