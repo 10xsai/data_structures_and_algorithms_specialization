@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/gdsvs/Documents/git/data_structures_and_algorithms_specialization/algorithms_toolbox/week1_programming_challenges/1_sum_of_two_digits/APlusB.cpp
+iostream
+-
+

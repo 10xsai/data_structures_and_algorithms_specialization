@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/gdsvs/Documents/git/data_structures_and_algorithms_specialization/algorithms_toolbox/week1_programming_challenges/2_maximum_pairwise_product/stress_test.cpp
+iostream
+-
+random
+-
+

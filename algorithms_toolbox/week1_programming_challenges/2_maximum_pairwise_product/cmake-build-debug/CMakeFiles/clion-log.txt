@@ -1,0 +1,4 @@
+"C:\Program Files\JetBrains\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\gdsvs\Documents\git\data_structures_and_algorithms_specialization\algorithms_toolbox\week1_programming_challenges\2_maximum_pairwise_product
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/gdsvs/Documents/git/data_structures_and_algorithms_specialization/algorithms_toolbox/week1_programming_challenges/2_maximum_pairwise_product/cmake-build-debug

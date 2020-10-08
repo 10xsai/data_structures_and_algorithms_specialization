@@ -1,8 +1,9 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include "stress_test.cpp"
 
-int MaxPairwiseProduct(const std::vector<int>& numbers) {
+int MaxPairwiseProductNaive(const std::vector<int>& numbers) {
     int max_product = 0;
     int n = numbers.size();
 
@@ -16,7 +17,32 @@ int MaxPairwiseProduct(const std::vector<int>& numbers) {
     return max_product;
 }
 
+int64_t MaxPairwiseProduct(const std::vector<int>& numbers) {
+    int n, currMax, firstMaxIndex;
+    int64_t maxProduct = 1;
+    n = numbers.size();
+    currMax = 0;
+    firstMaxIndex;
+    for (int i = 0; i < n; i++) {
+        if (numbers[i] > currMax) {
+            currMax = numbers[i];
+            firstMaxIndex = i;
+        }
+    }
+    maxProduct *= currMax;
+    currMax = 0;
+    for (int i = 0; i < n; i++) {
+        if (numbers[i] > currMax && i != firstMaxIndex) {
+            currMax = numbers[i];
+        }
+    }
+    maxProduct *= currMax;
+
+    return maxProduct;
+}
+
 int main() {
+    stressTest()
     int n;
     std::cin >> n;
     std::vector<int> numbers(n);
@@ -24,6 +50,6 @@ int main() {
         std::cin >> numbers[i];
     }
 
-    std::cout << MaxPairwiseProduct(numbers); << "\n";
+    std::cout << MaxPairwiseProduct(numbers) << "\n";
     return 0;
 }
