@@ -1,3 +1,0 @@
-C:/Users/gdsvs/Documents/git/data_structures_and_algorithms_specialization/algorithms_toolbox/cmake-build-debug/CMakeFiles/algorithms_toolbox.dir
-C:/Users/gdsvs/Documents/git/data_structures_and_algorithms_specialization/algorithms_toolbox/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/gdsvs/Documents/git/data_structures_and_algorithms_specialization/algorithms_toolbox/cmake-build-debug/CMakeFiles/rebuild_cache.dir
